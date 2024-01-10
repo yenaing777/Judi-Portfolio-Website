@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Judi - Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- Navigation Bar Start -->
+        <nav id="nav">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href=""><h3>Judi</h3></a>
+                    <button id="toggle-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#aboutme" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#myskills" onclick="toggleMenu()">Skill</a></li>
+                    <li><a href="#myworks" onclick="toggleMenu()">Work</a></li>
+                    <li><a href="#contactme" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navigation Bar End -->
+
+        <!-- Header Section Start -->
+        <section id="header">
+            <div class="container box-shadow">
+                <div class="content">
+                    <h4>HELLO THERE</h4>
+                    <h1>I am Judi - Web Designer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt hic ipsum at dignissimos, fugiat quae aspernatur eveniet ducimus consectetur molestiae cum excepturi.</p>
+                    <div class="social-icon">
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-div">
+                   <img src="images/person-2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Header Section End -->
+
+        <!-- About Section Start -->
+        <section id="aboutme">
+            <h1 class="section-title">About Me</h1>
+            <div class="container ">
+                <div class="image-div">
+                    <img src="images/person-2.jpg" class="box-shadow">
+                </div>
+                <div class="content">
+                    <h3>Judi</h3>
+                    <h3>Web Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat et quod. Sequi porro fuga ratione obcaecati dolores dolorem officia aspernatur, deserunt sunt ipsam nobis molestiae iusto in harum libero, recusandae velit minus corporis? Repellat natus illo, similique libero molestias debitis sequi aliquid quae dolores rerum tempore iusto, facere aut.</p>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Skill Section Start -->
+        <section id="myskills">
+            <h1 class="section-title">My Skills</h1>
+            <div class="container">
+                <div class="content">
+                    <h3 class="title-1">Front End</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>BootStrap</li>
+                        <li>Vuejs</li>
+                    </ul>
+                    <h3 class="title-2">Back End</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Nodejs</li>
+                        <li>Laravel</li>
+                        <li>Java</li>
+                    </ul>
+                    <h3  class="title-3">UI/UX Design & Others</h3>
+                    <ul>
+                        <li>AdobeXD</li>
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+                <div class="image-div">
+                    <img src="images/code.jpg" class="box-shadow">
+                </div>
+            </div>
+        </section>
+        <!-- Skill Section End -->
+
+        <!-- Work Section Start -->
+        <section id="myworks">
+            <h1 class="section-title">My Works</h1>
+            <div class="container">
+                <div class="card box-shadow">
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia neque, accusantium obcaecati quas molestiae corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rerum, quos facilis sit dolorum.</p>
+                    </div>
+                </div>
+                <div class="card box-shadow">
+                    <div>
+                        <i class="fa-brands fa-angular"></i>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia neque, accusantium obcaecati quas molestiae corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rerum, quos facilis sit dolorum.</p>
+                    </div>
+                </div>
+                <div class="card box-shadow">
+                    <div>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <h3>Graphic Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia neque, accusantium obcaecati quas molestiae corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rerum, quos facilis sit dolorum.</p>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <!-- Work Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="contactme">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="container">
+               <div class="info">
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> judi@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 092185828</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Myanmar</li>
+                </ul>
+               </div>
+               <div class="form">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" name="" placeholder="Enter Name">
+                            <input type="text" name="" placeholder="Enter Email">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button>Send</button>
+                    </form>
+               </div> 
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- Footer Section Start -->
+        <section id="footer">
+            <div class="container">
+                <div class="column">
+                    <div>
+                        <h3>ME - Judi likes Quotes</h3>
+                        <ul>
+                            <li>"What you get is what you did"</li>
+                            <li>"The more you give , the more uou receive."</li>
+                            <li>"Learn from where you lose."</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#aboutme">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#myskills">My SKill</a>
+                        </li>
+                        <li>
+                            <a href="#myworks">My Works</a>
+                        </li>
+                        <li>
+                            <a href="#contactme">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Follow Me On</h3>
+                    <div class="social-icon">
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <!-- Footer Section End -->
+        
+        <a href="#top" id="gototop"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navbar-menu').classList.toggle('active');
+            let btn = document.getElementById('toggle-btn');
+
+            if (btn.innerHTML == '<i class="fa-solid fa-xmark"></i>') {
+                btn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            } else {
+                btn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }
+        }
+
+        window.onscroll = function () {
+
+            console.log(window.pageYOffset)
+            let nav = document.getElementById('nav');
+            let goTop = document.getElementById('gototop');
+
+            if (window.pageYOffset > 30) {
+                nav.classList.add('bg')
+            } else {
+                nav.classList.remove('bg')
+            }
+
+            if (window.pageYOffset > 150) {
+                goTop.classList.add('active');
+            } else {
+                goTop.classList.remove('active');
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

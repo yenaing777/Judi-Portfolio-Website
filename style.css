@@ -1,0 +1,511 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+/* Common CSS */
+
+.main-container {
+    background-color: #D72483;
+    padding-top: 70px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+.container:not(#header .container) {
+    padding: 10px;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 8px black;
+}
+
+#aboutme, #myskills, #myworks, #contactme, #footer {
+    margin-top: 50px;
+}
+
+/* End Common CSS */
+
+/* Nav Section CSS */
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 2;
+    /* background-color: #1505a3; */
+}
+
+#nav.bg {
+    background-color: #0f2b91;
+}
+
+#nav > .container {
+    justify-content: space-between;
+}
+
+#nav .navbar-brand {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggle-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #EF079D;
+    display: none;
+}
+
+#nav .navbar-brand a {
+    text-decoration: none;
+}
+
+#nav .navbar-brand i {
+    font-size: 20px;
+}
+
+#nav .navbar-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+#nav .navbar-menu li {
+    padding: 10px 30px;
+}
+
+#nav .navbar-menu li a {
+    text-decoration: none;
+}
+
+/* Header Section CSS */
+#header .container {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background-color:  #2a1ca5;
+    align-items: center;
+}
+
+#header .container .content {
+    flex-basis: 60%;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 50px;
+}
+
+#header .container .content h4 {
+    letter-spacing: 5px;
+}
+
+#header .container .content h1,
+#header .container .content h4,
+#header .container .content p {
+    margin-bottom: 20px;
+}
+
+#header .container .content p {
+    line-height: 30px;
+}
+
+#header .container .image-div {
+    flex-basis: 40%;
+}
+
+#header .container .image-div img {
+    width: 100%;
+}
+
+
+
+.social-icon a {
+    margin-right: 15px;
+    font-size: 30px;
+    text-decoration: none; 
+}
+
+.social-icon .fa-youtube {
+    color: red;
+}
+
+.social-icon .fa-instagram {
+    color: pink;
+}
+
+.social-icon .fa-facebook {
+    color: #155ff3 ;
+}
+
+/* About Section CSS */
+#aboutme .content h3,#aboutme .content h3 {
+    line-height: 40px;
+
+}
+
+#aboutme .content p {
+    line-height: 2;
+}
+
+#aboutme .container {
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+#aboutme .container > div {
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+}
+
+#aboutme .image-div img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* MySkills Section CSS */
+#myskills .container {
+    align-items: center;
+}
+
+#myskills .container h3 {
+    margin-bottom: 10px;
+}
+
+#myskills .container > div {
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+}
+
+#myskills .content ul {
+    list-style-type: none;
+}
+
+#myskills .content .title-2,
+#myskills .content .title-3 {
+    margin-top: 30px;
+}
+
+#myskills .content ul li {
+    display: inline-block;
+    background-color: rgba(204, 204, 255, 0.5);
+    padding: 10px 15px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#myskills .image-div img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Work Section CSS */
+#myworks .container {
+    justify-content: space-evenly;
+}
+
+#myworks .card {
+    flex-basis: 30%;
+    background-color: #1505a3;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#myworks .card:hover {
+    background-color: #b60180;
+    z-index: 1;
+    transform: scale(1.1);
+    transition: transform 1s, background-color 1s;
+}
+
+#myworks .card h3 {
+    margin: 20px 0;
+}
+
+#myworks .card i {
+    font-size: 30px;
+}
+
+/* Contact Section CSS */
+
+#contactme .container div {
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+}
+
+#contactme ul {
+    list-style-type: none;
+    line-height: 40px;
+    font-weight: bold;
+    width: 200px;
+}
+
+#contactme ul li i {
+    width: 30px;
+}
+
+
+
+#contactme .form .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#contactme .form input {
+    width: 100%;
+}
+
+#contactme .form input,
+#contactme .form textarea,
+#contactme .form  button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: #000;
+}
+
+#contactme .form .form-group input {
+    padding: 15px;
+}
+
+#contactme .form .form-group input:first-child {
+    margin-right: 10px;
+}
+
+#contactme .form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+#contactme .form  button {
+    padding: 7px 30px;
+    float: right;
+    background-color: #1505a3;
+    color: #fff;
+}
+
+/* Footer Section CSS */
+
+#footer {
+    background-color: #1505a3;
+    padding-top: 10px;
+}
+
+#footer .container {
+    justify-content: space-between;
+    padding: 30px 0 100px 0;
+}
+
+#footer .container .column {
+    flex-basis: 32%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+}
+
+#footer .column h3 {
+    margin-bottom: 20px;
+}
+
+
+#footer .column ul {
+    list-style-type: none;
+}
+
+#footer .column ul li a {
+    text-decoration: none;
+}
+
+#gototop {
+    background-color: orange;
+    display: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+#gototop.active {
+    display: block;
+}
+
+/* Responsive CSS*/
+
+@media (max-width: 600px) {
+
+    /* Navigation Responsive */
+
+    #nav {
+        background-color: #022293;
+    }
+
+    #nav > .container {
+        flex-direction: column;
+    }
+
+    #nav .navbar-menu {
+        flex-direction: column;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    #nav .navbar-menu.active {
+        height: 230px;
+       
+    }
+
+    #toggle-btn {
+        display: block;
+    }
+
+    #nav .navbar-menu li {
+        /* border: 1px solid green; */
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    /* Header Responsive */
+    #header {
+        width: 100%;
+    }
+
+    #header .container {
+        flex-direction: column-reverse;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px;
+        width: 100%;
+    }
+
+    #header h4 {
+        color: red;
+        padding-top: 10px;
+    }
+    
+
+    #header .social-icon {
+        margin-bottom: 20px;
+    }
+
+    /* About Me Responsive */
+    #aboutme .content {
+        padding: 20px;
+    }
+
+    #aboutme .container {
+        text-align: center;
+    }
+
+    /* My Skills Responsive */
+
+    #myskills {
+        width: 100%;
+    }
+
+    #myskills .container img {
+        margin-top: 30px;
+    }
+
+    #myskills .content {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #myskills .container {
+        flex-direction: column-reverse;
+    }
+
+    /* My Works Responsive */
+    #myworks .card { 
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Contact Me Responsive */
+    #contactme .container {
+        width: 100%;
+    }
+
+    #contactme .form .form-group {
+        flex-direction: column;
+    }
+
+    #contactme .info {
+        margin-bottom: 10px;     
+    }
+
+    #contactme .form .form-group input {
+        padding: 15px;
+    }
+
+    #contactme .form textarea {
+        height: 150px;
+    }
+
+    #contactme .form .form-group input:first-child {
+        margin-bottom: 10px;
+    }
+
+    #contactme .form  button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    
+    #header .container {
+        margin: 0 10px;
+    }
+
+    #myworks .card { 
+        width: 90%;
+        margin: 10px auto;
+    }
+}
